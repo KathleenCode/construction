@@ -1,0 +1,617 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;1,300;1,400;1,600&family=Roboto:ital,wght@0,100;0,300;1,100;1,300;1,400&display=swap");
+
+/* css reset link online is
+ https://www.joshwcomeau.com/css/custom-css-reset/ */
+
+/*  1. Use a more-intuitive box-sizing model.*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*  2. Remove default margin*/
+
+* {
+  margin: 0;
+  font-family: "Open Sans", "Roboto", sans-serif;
+}
+
+/*  Typographic tweaks!  3. Add accessible line-height  4. Improve text rendering*/
+
+body {
+  line-height: 1.5;
+  background-color: #f6f7f9;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*  5. Improve media defaults*/
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  /* max-width: 100%; */
+}
+/*  6. Remove built-in form typography styles*/
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*  7. Avoid text overflows*/
+
+/* p, */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*  8. Create a root stacking context*/
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/*First Section */
+.top {
+  background-image:
+  linear-gradient(-230deg, rgba(252, 252, 245, 0.52), rgba(117, 78, 19, 0.73)),
+  url(./images/house1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.toptop {
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  color: white;
+}
+.toptop nav ul {
+  display: flex;
+  gap: 30px;
+}
+.toptop nav ul li {
+  list-style-type: none;
+}
+.toptop nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+}
+.toptop nav ul li a:hover {
+  color: brown;
+}
+.toptop span {
+  font-size: 30px;
+}
+.topp {
+  text-align: center;
+  color: white;
+  padding: 90px;
+  position: relative;
+}
+.topp p:nth-child(2) {
+  color: burlywood;
+  font-size: 50px;
+}
+.topp button {
+  background-color: burlywood;
+  color: white;
+  padding: 2px 15px;
+  border: none;
+  position: absolute;
+  bottom: 0;
+  right: 220px;
+  cursor: pointer;
+}
+.topp button:hover {
+  padding: 5px 17px;
+}
+
+/* Second Section */
+.second {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+.paragraphs {
+  padding: 50px 100px;
+  padding-left: 250px;
+}
+.paragraphs p:nth-child(2) {
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+.paragraphs p:nth-child(3) {
+  padding-bottom: 25px;
+  font-weight: 300;
+}
+.paragraphs p:nth-child(4) {
+  font-weight: 300;
+}
+.paragraphs button {
+  padding: 3px 20px;
+  background: transparent;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.paragraphs button:hover {
+  background: #FFAD84;
+  border-color: #FFAD84;
+  color: brown;
+}
+.form {
+  padding: 1px 12px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 215px;
+}
+.form input {
+  background-color: rgb(187, 173, 173);
+  border: none;
+  border-bottom: 1px solid rgb(43, 41, 41);
+  color: rgb(26, 24, 24);
+  padding: 17px 5px;
+}
+.form input:hover {
+  background-color: transparent;
+}
+.form button {
+  background-color: black;
+  color: white;
+  outline-offset: 12px solid grey;
+  padding: 3px;
+  cursor: pointer;
+}
+
+/* Third Section */
+.third .short{
+  text-align: center;
+  padding: 30px 50px;
+}
+.third .short span:nth-child(1) {
+  display: block;
+}
+.third .short span:nth-child(2) {
+  font-weight: 600;
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+.third .icons p i{
+  font-size: 30px;
+}
+.third .icons p i:hover {
+  font-size: 60px;
+}
+.third .icons p i:nth-child(2){
+  color: burlywood;
+}
+.icons {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.icons i {
+  padding-left: 30px;
+}
+
+/* Fourth Section */
+.fourth {
+  display: flex;
+}
+/* .fourth div img {
+  object-fit: cover;
+  width: 90%;
+} */
+.fourth .text {
+  color: white;
+  text-align: center;
+  background-color: burlywood;
+  padding: 10px 50px;
+  padding-right: 170px;
+}
+.fourth .text p:nth-child(1) {
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.fourth .text p:nth-child(2) {
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+.fourth .text p:nth-child(3) {
+  font-weight: bold;
+  padding-bottom: 50px;
+}
+.fourth .text button {
+  background: transparent;
+  padding: 5px 17px;
+  border: 1px solid navajowhite;
+  cursor: pointer;
+}
+.fourth .text button:hover {
+  background-color: #fff;
+}
+
+/* Fifth Section */
+.fifth {
+  text-align: center;
+  padding: 50px 50px;
+}
+.fifth span:nth-child(1) {
+  display: block;
+}
+.fifth span:nth-child(2) {
+  font-size: 30px;
+  font-weight: 600;
+}
+.fifth div {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.fifth div:first-of-type {
+  gap: 90px;
+  padding: 10px 10px;
+  padding-top: 50px;
+}
+.fifth div img {
+  height: 220px;
+  width: 270px;
+}
+.fifth div img:hover {
+  width: 250px;
+}
+.fifth div p i{
+  color: burlywood;
+  padding-right: 5px;
+  padding-bottom: 30px;
+}
+.fifth div p i:hover {
+  font-size: x-large;
+}
+
+/*Seventh Section */
+footer .f1{
+  background-color: grey;
+  color: white;
+  display: flex;
+  gap: 300px;
+  justify-content: center;
+  padding: 10px 10px;
+}
+footer .f1 .ic i{
+  padding-left: 21px;
+}
+footer .f1 .i i{
+  color: burlywood;
+  padding-right: 10px;
+}
+footer .f2{
+  background-color: rgb(22, 21, 21);
+  color: white;
+  display: flex;
+  gap: 230px;
+  justify-content: center;
+  padding: 10px 30px;
+}
+#ham {
+  display: none;
+}
+
+/* Media Query */
+/* For small screen sizes */
+@media only screen and (max-width: 600px) {
+  /*First Section */
+.topp {
+    position: relative;
+}
+.toptop nav ul {
+  display: none;
+}
+#ham {
+  display: block;
+  font-size: xx-large;
+  background-color: brown;
+  border: 3px dashed saddlebrown;
+  border-top-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+}
+.toptop .menu.showMenu li {
+  color:azure;
+}
+.toptop .menu.showMenu li a {
+  color:antiquewhite;
+}
+.toptop .menu.showMenu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  margin: 0 auto;
+  position: absolute;
+  top: 27px;
+  left: 70px;
+  padding: 1px;
+  font-size: x-small;
+  text-align: center;
+  background-color: maroon;
+}
+
+.topp p:nth-child(2) {
+  font-size: 23px;
+}
+.topp button {
+ font-size: small;
+}
+
+/* Second Section */
+.second {
+  flex-direction: column; 
+}
+.paragraphs {
+  padding: 50px 100px;
+}
+.paragraphs p:nth-child(2) {
+  font-size: 29px;
+}
+.paragraphs p:nth-child(3) {
+  font-size: small;
+}
+.paragraphs p:nth-child(4) {
+  font-size: small;
+}
+.paragraphs button {
+ font-size: small;
+}
+.form {
+  align-items: center;
+  margin-bottom: 10px;
+}
+.form input {
+  width: 50vw;
+  margin-left: 13rem;
+}
+.form button {
+  width: 50vw;
+  margin-left: 13rem;
+}
+
+/* Third Section */
+.icons i {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Fourth Section */
+.fourth {
+  flex-direction: column;
+}
+.fourth div img {
+  width: 99%;
+}
+.fourth .text {
+  margin-top: 17px;
+}
+.fourth .text p:nth-child(1) {
+  padding-left: 5rem;
+  font-size: 29px;
+}
+.fourth .text p:nth-child(2) {
+  font-style: small;
+  overflow-wrap: break-word;
+  width: 90%;
+  margin-left: 5rem;
+}
+.fourth .text p:nth-child(3) {
+  font-style: small;
+  overflow-wrap: break-word;
+  width: 90%;
+  margin-left: 5rem;
+}
+.fourth .text button {
+  font-style: small;
+  padding: 5px 15px;
+}
+
+/* Fifth Section */
+.fifth {
+  text-align: center;
+  padding: 50px 50px;
+}
+.fifth div {
+  flex-direction: column;
+  gap: 30px;
+}
+.fifth div:first-of-type {
+  gap: 10px;
+}
+.fifth div img {
+  height: 220px;
+  width: 79vw;
+}
+.fifth div p i{
+  color: burlywood;
+  padding-right: 5px;
+  padding-bottom: 30px;
+}
+
+/*Seventh Section */
+footer .f1{
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+footer .f2{
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+}
+
+/* For large screen sizes */
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  /*First Section */
+
+.topp {
+  position: relative;
+}
+.toptop nav ul {
+display: none;
+}
+#ham {
+display: block;
+font-size: xx-large;
+background-color: brown;
+border: 3px dashed saddlebrown;
+border-top-left-radius: 20%;
+border-bottom-right-radius: 20%;
+}
+.toptop .menu.showMenu li {
+color:azure;
+}
+.toptop .menu.showMenu li a {
+color:antiquewhite;
+}
+.toptop .menu.showMenu {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 5px;
+margin: 0 auto;
+position: absolute;
+top: 20px;
+left: 190px;
+padding: 1px;
+font-size: x-small;
+text-align: center;
+background-color: maroon;
+}
+
+.topp p:nth-child(2) {
+  font-size: 29px;
+}
+.topp button {
+ font-size: large;
+}
+
+/* Second Section */
+.second {
+  flex-direction: column; 
+}
+.paragraphs {
+  padding: 50px 100px;
+  padding-left: 250px;
+}
+.paragraphs p:nth-child(2) {
+  font-size: 29px;
+}
+.paragraphs p:nth-child(3) {
+  font-size: large;
+  overflow-wrap: break-word;
+  width: 75%;
+}
+.paragraphs p:nth-child(4) {
+  font-size: large;
+  overflow-wrap: break-word;
+  width: 75%;
+}
+.paragraphs button {
+ font-size: large;
+}
+.form {
+  align-items: end;
+  margin-bottom: 10px;
+}
+.form input {
+  width: 50vw;
+}
+.form button {
+  width: 50vw;
+}
+
+/* Third Section */
+.icons i {
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Fourth Section */
+.fourth {
+  flex-direction: column;
+}
+.fourth div img {
+  width: 50%;
+  margin-left: 13rem;
+}
+.fourth .text {
+  margin-top: 17px;
+}
+.fourth .text p:nth-child(1) {
+  font-size: 29px;
+}
+.fourth .text p:nth-child(2) {
+  font-style: small;
+  overflow-wrap: break-word;
+  width: 75%;
+  margin-left: 9rem;
+}
+.fourth .text p:nth-child(3) {
+  font-style: small;
+  overflow-wrap: break-word;
+  width: 75%;
+  margin-left: 9rem;
+}
+.fourth .text button {
+  font-style: large;
+  padding: 10px 30px;
+}
+
+/* Fifth Section */
+.fifth {
+  text-align: center;
+  padding: 50px 50px;
+}
+.fifth div {
+  flex-direction: column;
+  gap: 30px;
+}
+.fifth div:first-of-type {
+  font-size: large;
+  gap: 10px;
+}
+.fifth div img {
+  height: 290px;
+  width: 70%;
+  margin-left: 7rem;
+}
+.fifth div p i{
+  color: burlywood;
+  padding-right: 5px;
+  padding-bottom: 30px;
+}
+
+/*Seventh Section */
+footer .f1{
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  font-size: large;
+}
+footer .f2{
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+}
